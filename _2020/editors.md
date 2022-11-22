@@ -8,70 +8,69 @@ video:
   id: a6Q8Na575qc
 ---
 
-Writing English words and writing code are very different activities. When
-programming, you spend more time switching files, reading, navigating, and
-editing code compared to writing a long stream. It makes sense that there are
-different types of programs for writing English words versus code (e.g.
-Microsoft Word versus Visual Studio Code).
+Escrever palavras em português e escrever código são atividades muito diferentes.
+Ao programar, você gasta mais tempo alternando arquivos, lendo, navegando e editando
+código em comparação com a gravação de um longo fluxo. Faz sentido que existam
+diferentes tipos de programas para escrever palavras em inglês versus código 
+(por exemplo, Microsoft Word versus Visual Studio Code).
 
-As programmers, we spend most of our time editing code, so it's worth investing
-time mastering an editor that fits your needs. Here's how you learn a new
-editor:
+Como programadores, passamos a maior parte do tempo editando código, então vale a
+pena investir tempo para dominar um editor que atenda às suas necessidades. Veja 
+como você aprende um novo editor:
 
-- Start with a tutorial (i.e. this lecture, plus resources that we point out)
-- Stick with using the editor for all your text editing needs (even if it slows
-you down initially)
-- Look things up as you go: if it seems like there should be a better way to do
-something, there probably is
+- Comece com um tutorial (ou seja, esta palestra, mais os recursos que apontamos)
+- Continue usando o editor para todas as suas necessidades de edição de texto
+(mesmo que te deixe mais lento inicialmente)
+- Procure as coisas à medida que avança: se parecer que deve haver uma maneira
+melhor de fazer algo, provavelmente há
 
-If you follow the above method, fully committing to using the new program for
-all text editing purposes, the timeline for learning a sophisticated text
-editor looks like this. In an hour or two, you'll learn basic editor functions
-such as opening and editing files, save/quit, and navigating buffers. Once
-you're 20 hours in, you should be as fast as you were with your old editor.
-After that, the benefits start: you will have enough knowledge and muscle
-memory that using the new editor saves you time. Modern text editors are fancy
-and powerful tools, so the learning never stops: you'll get even faster as you
-learn more.
+Se você seguir o método acima, comprometendo-se totalmente a usar o novo programa para
+todos os propósitos de edição de texto, a linha do tempo para aprender um editor de texto
+sofisticado será assim. Em uma ou duas horas, você aprenderá as funções básicas do editor,
+como abrir e editar arquivos, salvar/sair e navegar em buffers. Depois de 20 horas,
+você deve ser tão rápido quanto era com seu antigo editor. Depois disso, os benefícios
+começam: você terá conhecimento e memória muscular suficientes para que o uso do novo
+editor economize tempo. Os editores de texto modernos são ferramentas sofisticadas
+e poderosas, portanto, o aprendizado nunca para: você ficará ainda mais rápido
+à medida que aprender mais.
 
-# Which editor to learn?
+# Qual editor aprender?
+Os programadores têm [opiniões fortes](https://en.wikipedia.org/wiki/Editor_war)
+sobre seus editores de texto.
 
-Programmers have [strong opinions](https://en.wikipedia.org/wiki/Editor_war)
-about their text editors.
-
-Which editors are popular today? See this [Stack Overflow
-survey](https://insights.stackoverflow.com/survey/2019/#development-environments-and-tools)
-(there may be some bias because Stack Overflow users may not be representative
-of programmers as a whole). [Visual Studio
-Code](https://code.visualstudio.com/) is the most popular editor.
-[Vim](https://www.vim.org/) is the most popular command-line-based editor.
+Quais editores são populares hoje? Veja esta [pesquisa do Stack 
+Overflow](https://insights.stackoverflow.com/survey/2019/#development-environments-and-tools)
+(pode haver algum viés porque os usuários do Stack Overflow podem não ser 
+representativos dos programadores como um todo). O [Visual Studio 
+Code](https://code.visualstudio.com/) é o editor mais popular.
+[Vim](https://www.vim.org/) é o editor baseado em linha de comando mais popular.
 
 ## Vim
 
-All the instructors of this class use Vim as their editor. Vim has a rich
-history; it originated from the Vi editor (1976), and it's still being
-developed today. Vim has some really neat ideas behind it, and for this reason,
-lots of tools support a Vim emulation mode (for example, 1.4 million people
-have installed [Vim emulation for VS code](https://github.com/VSCodeVim/Vim)).
-Vim is probably worth learning even if you finally end up switching to some
-other text editor.
+Todos os instrutores desta classe usam o Vim como editor. Vim tem uma história
+rica; originou-se do editor Vi (1976) e ainda está sendo desenvolvido hoje.
+O Vim tem algumas ideias realmente legais por trás dele e, por esse motivo,
+muitas ferramentas oferecem suporte a um modo de emulação do Vim (por exemplo,
+1,4 milhão de pessoas instalaram a [emulação do Vim para VS Code](https://github.com/VSCodeVim/Vim)).
+Provavelmente vale a pena aprender o Vim, mesmo que você finalmente mude para
+outro editor de texto.
 
-It's not possible to teach all of Vim's functionality in 50 minutes, so we're
-going to focus on explaining the philosophy of Vim, teaching you the basics,
-showing you some of the more advanced functionality, and giving you the
-resources to master the tool.
+Não é possível ensinar todas as funcionalidades do Vim em 50 minutos, então
+vamos nos concentrar em explicar a filosofia do Vim, ensinando o básico,
+mostrando algumas das funcionalidades mais avançadas e dando a você os
+recursos para dominar a ferramenta.
 
-# Philosophy of Vim
+# Filosofia do Vim
 
-When programming, you spend most of your time reading/editing, not writing. For
-this reason, Vim is a _modal_ editor: it has different modes for inserting text
-vs manipulating text. Vim is programmable (with Vimscript and also other
-languages like Python), and Vim's interface itself is a programming language:
-keystrokes (with mnemonic names) are commands, and these commands are
-composable. Vim avoids the use of the mouse, because it's too slow; Vim even
-avoids using the arrow keys because it requires too much movement.
+Ao programar, você passa a maior parte do tempo lendo/editando, não escrevendo.
+Por esse motivo, o Vim é um editor _modal_: possui modos diferentes para inserir
+texto e manipular texto. O Vim é programável (com Vimscript e também outras
+linguagens como Python), e a própria interface do Vim é uma linguagem de programação:
+pressionamentos de tecla (com nomes mnemônicos) são comandos e esses comandos podem
+ser combinados. O Vim evita o uso do mouse, pois é muito lento; O Vim até evita
+usar as teclas de seta porque exige muito movimento.
 
-The end result is an editor that can match the speed at which you think.
+O resultado final é um editor que pode corresponder à velocidade com que você pensa.
 
 # Modal editing
 
