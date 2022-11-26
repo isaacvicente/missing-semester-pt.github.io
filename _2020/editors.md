@@ -72,36 +72,34 @@ usar as teclas de seta porque exige muito movimento.
 
 O resultado final é um editor que pode corresponder à velocidade com que você pensa.
 
-# Modal editing
+# Edição modal
 
-Vim's design is based on the idea that a lot of programmer time is spent
-reading, navigating, and making small edits, as opposed to writing long streams
-of text. For this reason, Vim has multiple operating modes.
+O design do Vim é baseado na ideia de que boa parte do tempo do programador é gasto
+escrevendo, navegando e fazendo pequenas edições, em vez de escrever longos parágrafos.
+Por essa razão, o Vim possui vários modos de operação.
 
-- **Normal**: for moving around a file and making edits
-- **Insert**: for inserting text
-- **Replace**: for replacing text
-- **Visual** (plain, line, or block): for selecting blocks of text
-- **Command-line**: for running a command
+- **Normal**: para navegar ao longo do texto e fazer edições
+- **Inserção**: para inserir texto
+- **Substituição**: para substituir texto
+- **Visual** (padrão, linha, or bloco): para selecionar blocos de texto
+- **Linha de comando**: para executar um comando
 
-Keystrokes have different meanings in different operating modes. For example,
-the letter `x` in Insert mode will just insert a literal character 'x', but in
-Normal mode, it will delete the character under the cursor, and in Visual mode,
-it will delete the selection.
+As teclas possuem diferentes significados nos diferentes modos de operação. Por
+exemplo, a letra `x` no modo de Inserção irá apenas inserir o caractere 'x', mas
+no modo Normal, ela irá apagar o caractere que está sob o cursor e, no modo Visual,
+ela irá apagar a seleção.
 
-In its default configuration, Vim shows the current mode in the bottom left.
-The initial/default mode is Normal mode. You'll generally spend most of your
-time between Normal mode and Insert mode.
+Na sua configuração padrão, o Vim mostra o modo atual na parte inferior esquerda.
+O modo inicial/padrão é o Normal. Você normalmente vai passar a maioria do seu
+tempo entre os modos Normal e Inserção.
 
-You change modes by pressing `<ESC>` (the escape key) to switch from any mode
-back to Normal mode. From Normal mode, enter Insert mode with `i`, Replace mode
-with `R`, Visual mode with `v`, Visual Line mode with `V`, Visual Block mode
-with `<C-v>` (Ctrl-V, sometimes also written `^V`), and Command-line mode with
-`:`.
+Você alterar os modos ao pressionar `<ESC>` para voltar de qualquer modo para o
+modo Normal. No modo Normal, entre no modo Inserir pressionando `i`, no modo
+Substituição pressionando `R`, no modo Visual com `v`, no modo Visual Linha com
+`V`, modo Visual Bloco com `<C-v>` (Ctrl-V) e no modo de linha de comando com `:`.
 
-You use the `<ESC>` key a lot when using Vim: consider remapping Caps Lock to
-Escape ([macOS
-instructions](https://vim.fandom.com/wiki/Map_caps_lock_to_escape_in_macOS)).
+Você irá usar bastante a tecla `<ESC>` ao usar o Vim: considere remapear sua tecla
+Caps Lock para Escape. ([Instruções para macOS](https://vim.fandom.com/wiki/Map_caps_lock_to_escape_in_macOS)).
 
 # Basics
 
